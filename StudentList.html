@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+      <style>
+        .ss {
+            background-image: url('logo1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+        }
+        a{
+			color: black;
+		
+		}
+		a:hover{	
+			color: black;
+			text-decoration: none;		
+		}
+	
+    </style>
+</head>
+<body  style="background-color:#79a3f7">
+     
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="first.html">
+                    KI Institution</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="StudentList.html">Student</a></li>
+                <li><a href="AddSubject.html">Subject</a></li>
+                <li><a href="AddQuestion.html">Add Question</a></li>
+                <li><a href="Interview.html">Report</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                    Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <center>
+    <form style="font-family: Cooper Black;">
+    <table class="table table-bordered table-hover" style="width: 1000px; height:auto;font-family: Cooper Black;">
+		<tr tr class="table-dark" style="font-family: Cooper Black;">
+			<th>Sl. No.</th>
+			<th>Name</th>
+			<th>Password</th>
+			<th>Delete</th>
+		</tr>
+			
+		<tr>
+			<td>1</td>
+			<td>Saran</td>
+			<td>saran&67</td>
+			<td><a href="deletestudent.jsp?username=<%=e.getUsername()%>">Delete</a></td>
+		</tr>
+        <tr>
+            <td>2</td>
+            <td>Praveen</td>
+            <td>praveen&67</td>
+            <td><a href="deletestudent.jsp?username=<%=e.getUsername()%>">Delete</a></td>
+        </tr>
+		<tr>
+			
+	</table>
+    <center>
+        <input type="button" value="Add Student"
+            class="btn btn-outline-success"
+            onclick="location.href='AddStudent.html'">
+    </center>
+</form>
+</center>
+</body>
+</html>
